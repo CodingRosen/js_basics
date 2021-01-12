@@ -1,0 +1,48 @@
+Git Repository Notes
+Git and Github are NOT the same
+    Git is the language used for version control
+    Github is a hosted (online) storage of Repositories
+        like Gitlab, BitBucket both use Git
+CMD: git clone <url>
+    Makes a local copy of git Repository typically from Github
+    Note: exclude the example < >
+CMD: git status
+    Shows what is/is not staged for commit
+
+CMD: git pull
+    Get changes from hosted Repo (Github Repo typically)
+CMD: git push
+    Update hosted Repository with my local committed changes
+CMD: git commit -m "this is a commite message"
+    Commit will add a snapshot of my code at this point in time
+        -m means message so I will know why I am saving this commit aka snapshot
+        Note: -m " my commit message" is required
+
+CMD: git add <file>
+    Add a file to the Staging area that will be committed
+
+Branches:
+Git has different branches aka folders all different versions of the same original folder
+CMD: git branch
+    Shows available branches, * means you're current on this branch
+CMD: git checkout <branch name>
+    Switches to an existing branch
+CMD: git checkout -b <new branch name>
+    Creates a new branch and switches to it
+Each breakdown:
+    Getting Update from Github to local Repository
+        1. git status
+        2. git pull
+        3. may handle merge conflict
+        4. code...
+
+    Added local Repository changes to Github
+        1. git status
+        2. git add <file>
+            git status
+        3. git commit -m "useful message to read later about the changes I made to the code"
+            git status
+        4. git push
+
+    Change git branches
+
